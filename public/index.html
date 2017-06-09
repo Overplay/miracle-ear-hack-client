@@ -32,7 +32,9 @@
                 //$(".ogaudio").data("protocol", audioId);
 				$(".ogaudio").get().forEach(function(element, index, array) {
 				    console.log(array[index]);
-					}
+                    array[index].dataset['url'] = "ws://localhost:3000/";
+					array[index].dataset['protocol'] = audioId;
+                    }
 				);
                 JSMpeg.CreateVideoElements();
             }
