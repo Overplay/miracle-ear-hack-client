@@ -37,4 +37,9 @@ app.controller('playerController', function( $stateParams, $scope, $log, $timeou
 
     }, 1000 );
 
+
+    $scope.back = function(){
+        window.location.href = "https://cloud-dm.ourglass.tv/blueline/control/index.html?deviceUDID="+$scope.deviceUDID;
+    }
+
 });
